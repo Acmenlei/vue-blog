@@ -1,5 +1,7 @@
 <template>
-  <div class="header-layout"></div>
+  <div class="header-layout">
+    
+  </div>
 </template>
 
 <script>
