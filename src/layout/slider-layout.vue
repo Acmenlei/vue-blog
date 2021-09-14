@@ -1,5 +1,7 @@
 <template>
-  <div class="slider-layout">out</div>
+  <div class="slider-layout">
+    profile
+  </div>
 </template>
 
 <script>

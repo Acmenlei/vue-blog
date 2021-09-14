@@ -18,6 +18,13 @@ export default {
 </script>
 <style lang="scss">
 // 全局样式
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
 body {
   background: #f8f8f8;
   #app {

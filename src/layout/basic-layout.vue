@@ -1,22 +1,29 @@
 <template>
+  <header-bar />
   <div class="basic-layout">
-    <slide-bar />
     <router-view />
+    <slider-bar class="slider-bar" />
   </div>
 </template>
 
 <script>
-import SlideBar from "./slider-layout.vue";
+import SliderBar from "./slider-layout.vue";
+import HeaderBar from "./header-layout.vue";
 export default {
   name: "basic-layout",
-  components: { SlideBar },
+  components: { SliderBar, HeaderBar },
 };
 </script>
 
 <style lang='scss' scoped>
 .basic-layout {
   display: flex;
+  padding-top: 1rem;
   justify-content: center;
-  align-items: center;
+  .slider-bar {
+    flex: 0.58;
+    margin-left: 1rem;
+    background: #000;
+  }
 }
 </style>

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.ttf?t=1631602724132') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-leave-message:before {
+  content: "\e6b7";
+}
+
+.icon-index:before {
+  content: "\e650";
+}
+
+.icon-Group329:before {
+  content: "\e519";
+}
+
+.icon-UserPersonAccountInterfaceLogin:before {
+  content: "\e604";
+}
+
+.icon-a-icon-common-article:before {
+  content: "\e67c";
+}

@@ -13,7 +13,6 @@
 </template>
 <script>
 import { toRefs } from "@vue/reactivity";
-// import { onMounted } from "@vue/runtime-core";
 import { article } from "./scripts/index.js";
 export default {
   name: "home",
@@ -38,14 +37,6 @@ $shadow: rgba(0, 0, 0, 0.2);
   transition: $args;
 }
 
-* {
-  box-sizing: border-box;
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-}
-
 #container {
   width: 30rem;
   height: 13.625rem;
@@ -55,13 +46,14 @@ $shadow: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   background: $white;
-  box-shadow: 0 0.1875rem 1.5rem $shadow;
+  box-shadow: 0 0.1875rem .5rem $shadow;
   border-radius: 0.375rem;
   overflow: hidden;
-  width: 60%;
+  width: 100%;
 }
 
 .card-link {
+  width: 60%;
   position: relative;
   display: block;
   color: inherit;
@@ -128,7 +120,6 @@ $shadow: rgba(0, 0, 0, 0.2);
 }
 
 @supports (display: grid) {
-
   #container {
     grid-area: main;
     align-self: center;
